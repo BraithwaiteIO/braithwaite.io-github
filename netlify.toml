@@ -1,0 +1,11 @@
+[build]
+
+  publish = "dist/"
+  command = "github-backup BraithwaiteIO --token $ACCESS_TOKEN --organization --lfs --output-directory dist --all"
+
+[[redirect]]
+
+  from = "/"
+  to = "https://github.com/BraithwaiteIO"
+  status = 302
+
