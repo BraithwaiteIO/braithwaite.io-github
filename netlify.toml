@@ -1,7 +1,13 @@
 [build]
 
   publish = "dist/"
-  command = "github-backup BraithwaiteIO --token $ACCESS_TOKEN --organization --lfs --output-directory dist --all"
+  command = """github-backup BraithwaiteIO \
+--token $ACCESS_TOKEN \
+--organization \
+--lfs \
+--output-directory dist \
+--all \
+--bare"""
 
 [[redirect]]
 
